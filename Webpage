@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Future Services</title>
+  <meta name="description" content="Future Services - recruitment & manpower / driver recruitment / office in Kuwait" />
+  <style>
+    /* Reset + base */
+    :root {
+      --accent: #0b6efd;
+      --muted: #6b7280;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --radius: 12px;
+      --maxw: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    body{background:var(--bg);color:#111827;line-height:1.5;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:28px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),#06b6d4);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{display:flex;gap:16px;align-items:center}
+    nav a{color:inherit;text-decoration:none;padding:8px 10px;border-radius:8px}
+    nav a:hover{background:rgba(11,110,253,0.08)}
+    .cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:28px}
+    .hero h1{font-size:28px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cards{display:flex;gap:12px;flex-wrap:wrap}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);flex:1;min-width:180px}
+    /* image box placeholder */
+    .image-box{width:100%;height:260px;border-radius:12px;background:linear-gradient(180deg,#e6eefc,#ffffff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    /* sections */
+    section{margin-bottom:26px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .service{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    .service h3{margin:0 0 8px;font-size:16px}
+    /* contact card */
+    .contact-card{background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.04)}
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    label{display:block;margin-bottom:6px;font-size:13px;color:var(--muted)}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:#fff}
+    button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
+    footer{padding:18px 0;color:var(--muted);font-size:14px;border-top:1px solid #e9eef6;margin-top:18px}
+    /* responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:620px){
+      nav{display:none}
+      .mobile-nav-btn{display:block}
+      .grid-3{grid-template-columns:1fr}
+    }
+    .mobile-nav-btn{display:none;background:transparent;border:0;font-size:18px}
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">FS</div>
+        <div>
+          <div style="font-weight:700">Future Services</div>
+          <div class="small muted">Recruitment · Drivers · Kuwait</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:12px">
+        <button class="mobile-nav-btn" aria-expanded="false" id="mobileBtn">☰</button>
+        <nav id="mainNav">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="cta" href="#contact">Contact Us</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div>
+        <h1>Your trusted recruitment partner in Kuwait</h1>
+        <p>We connect skilled manpower and licensed drivers with leading employers across Kuwait. Replace the hero image below with your own photo (see images/hero.jpg).</p>
+
+        <div class="cards" style="margin-top:14px">
+          <div class="card">
+            <strong>Office</strong>
+            <div class="small muted">Office 21 — Future Service &amp; Office 20 — Mohammed Ibrahim</div>
+          </div>
+          <div class="card">
+            <strong>Email</strong>
+            <div class="small muted">futureservices1.567@gmail.com</div>
+          </div>
+          <div class="card">
+            <strong>Phone</strong>
+            <div class="small muted">+965 660-00-897</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Replace src with your hero photo, e.g. images/hero.jpg -->
+        <div class="image-box">
+          IMAGE PLACEHOLDER — hero (replace: images/hero.jpg)
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2 style="margin-bottom:10px">Our Services</h2>
+      <div class="grid-3">
+        <div class="service">
+          <h3>Driver Recruitment</h3>
+          <p class="muted small">Licensed drivers, clearance checks, placement to reliable employers.</p>
+          <div style="height:120px;margin-top:10px;border-radius:8px;background:#f3f6fb;display:flex;align-items:center;justify-content:center;">
+            image placeholder (replace: images/service-driver.jpg)
+          </div>
+        </div>
+        <div class="service">
+          <h3>Domestic Manpower</h3>
+          <p class="muted small">Skilled and trained domestic staff to match employer expectations.</p>
+          <div style="height:120px;margin-top:10px;border-radius:8px;background:#f3f6fb;display:flex;align-items:center;justify-content:center;">
+            image placeholder (replace: images/service-domestic.jpg)
+          </div>
+        </div>
+        <div class="service">
+          <h3>HR Consultancy</h3>
+          <p class="muted small">Visa support, onboarding, payroll coordination and compliance guidance.</p>
+          <div style="height:120px;margin-top:10px;border-radius:8px;background:#f3f6fb;display:flex;align-items:center;justify-content:center;">
+            image placeholder (replace: images/service-hr.jpg)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p class="muted">Future Service is an experienced recruitment agency with local presence in Kuwait. (Edit this paragraph with your company description.)</p>
+
+      <div style="display:flex;gap:14px;margin-top:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px" class="contact-card">
+          <h3 style="margin-top:0">Quick Facts</h3>
+          <ul class="small muted">
+            <li>Office Location: Hawalli, Ibn Khaldoun Complex, Mezzanine, Office 21</li>
+            <li>Primary Email: futureservices1.567@gmail.com</li>
+            <li>Phone: +965 660-00-897</li>
+          </ul>
+        </div>
+        <div style="flex:2;min-width:260px" class="contact-card">
+          <h3 style="margin-top:0">Replaceable gallery</h3>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <div style="flex:1;min-width:120px;height:90px;border-radius:8px;background:#eef4ff;display:flex;align-items:center;justify-content:center;">img 1</div>
+            <div style="flex:1;min-width:120px;height:90px;border-radius:8px;background:#eef4ff;display:flex;align-items:center;justify-content:center;">img 2</div>
+            <div style="flex:1;min-width:120px;height:90px;border-radius:8px;background:#eef4ff;display:flex;align-items:center;justify-content:center;">img 3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-card">
+            <h3 style="margin-top:0">Get in touch</h3>
+            <p class="muted small">Fill out the form and we'll get back to you. Replace contact details below with your current details.</p>
+
+            <form id="contactForm" onsubmit="event.preventDefault(); alert('Form stub — implement backend / email config.');">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" required />
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="How can we help?" required></textarea>
+              <div style="margin-top:10px;display:flex;gap:8px;align-items:center;">
+                <button type="submit">Send Message</button>
+                <div class="small muted">Or call: +965 660-00-897</div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-card">
+            <h3 style="margin-top:0">Office</h3>
+            <p class="small muted">
+              FUTURE SERVICE<br/>
+              Hawalli — Ibn Khaldoun Street<br/>
+              Ibn Khaldoun Complex, Mezzanine, Office 21<br/>
+              Email: futureservices1.567@gmail.com<br/>
+              Phone: +965 660-00-897
+            </p>
+            <!-- Map placeholder -->
+            <div style="margin-top:10px;border-radius:8px;height:160px;background:#f3f6fb;display:flex;align-items:center;justify-content:center;">
+              MAP PLACEHOLDER — replace with embedded map iframe if desired
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div class="small muted">© <span id="year"></span> Future Services — All rights reserved.</div>
+        <div class="small muted">Designed by You — Template from ChatGPT</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mainNav = document.getElementById('mainNav');
+    mobileBtn.addEventListener('click', () => {
+      const shown = mainNav.style.display === 'flex';
+      mainNav.style.display = shown ? 'none' : 'flex';
+      mobileBtn.setAttribute('aria-expanded', String(!shown));
+    });
+
+    // simple progressive image swap: replace .image-box innerText with actual <img> if file exists (optional)
+    // Example: if you add <img src="images/hero.jpg"> into the .image-box manually, it will show.
+  </script>
+</body>
+</html>
